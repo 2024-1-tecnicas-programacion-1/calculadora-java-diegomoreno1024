@@ -60,7 +60,7 @@ public class CalculadoraTest {
     @Test
     public void testraiz() {
         double valorEsperado = 10;
-        double valorActual = Calculadora.calcular(100, 2, '.');
+        double valorActual = Calculadora.calcular(100, 2, 'r');
         assertEquals(valorEsperado, valorActual);
     }
 

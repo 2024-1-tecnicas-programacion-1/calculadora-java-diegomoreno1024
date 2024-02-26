@@ -34,7 +34,7 @@ public class Calculadora {
                 // Operacion potencia
                 respuesta= Math.pow(numero1, numero2);
                 break;
-            case '.':
+            case 'r':
                 // Operación raiz cuadrada
                 respuesta= Math.pow(numero1, 1.0/numero2);
                 break;
@@ -54,7 +54,7 @@ public class Calculadora {
         int numero2 = lector.nextInt();
         
         // Lectura de la operación a realizar
-        System.out.println("Ingrese la operación (+, -, *, /,^,%)");
+        System.out.println("Ingrese la operación (+, -, *, /,^,%,r)");
         char operacion = lector.next().charAt(0);
         
         double respuesta = calcular(numero1, numero2, operacion);
