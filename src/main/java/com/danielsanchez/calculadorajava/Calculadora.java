@@ -23,7 +23,7 @@ public class Calculadora {
                 respuesta = numero1 * numero2;
                 break;
             case '%':
-                // Operaciòn modulo
+                // Operación modulo
                 respuesta= numero1 % numero2;
                 break;
             case '/' :
@@ -33,7 +33,11 @@ public class Calculadora {
             case '^':
                 // Operacion potencia
                 respuesta= Math.pow(numero1, numero2);
-                break;                
+                break;
+            case '.':
+                // Operación raiz cuadrada
+                respuesta= Math.pow(numero1, 1.0/numero2);
+                break;
             default:
                 throw new IllegalArgumentException("Operación inválida.");
         }
